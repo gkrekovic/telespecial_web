@@ -807,7 +807,7 @@ blockquote .logo-quote {
 Showcase
 ========================================================================== */
 .showcase {
-    background: url('../img/bck.jpg') no-repeat center center fixed;
+    background: url('../img/back.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 .showcase h1 {
