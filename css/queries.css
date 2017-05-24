@@ -4,7 +4,7 @@
 	.feature-content{width:55%;}
 }
 @media screen and (max-width:991px){
-	.feature-1,.feature-2{margin-bottom:50px;}
+	.feature-1,.feature-2{margin-bottom:30px;}
 	.device{display:none;}
 	.screenshots ul li{width:50%;}
 	.screenshots-intro{padding:110px 0 100px 0;}
@@ -22,13 +22,26 @@
 	.overlay ul li a{padding:20px 0;min-width:120px;font-size:12px;}
 }
 @media screen and (max-width:465px){
-	.hero h1{font-size:40px;margin:100px 0 45px 0}
-	.screenshots ul li{width:100%;min-height:100%;float:none;}
+	.hero h1{font-size:24px;}
+	.features-list {padding: 40px 0}
+	.features-list h2 {font-size: 18px;}
+	.feature-icon {
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    border: solid 2px #3F6184;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+	}
+	
+	/* .screenshots ul li{width:100%;min-height:100%;float:none;}
 	section.video i{font-size:30px;}
 	section.video h1{font-size:15px;font-weight:400;}
-	section.video{padding:40px;}
-	.feature-content{width:100%;text-align:center;margin-top:20px;}
-	.feature-icon{display:block;margin:0 auto;}
+	section.video{padding:40px;} */
+	.feature-content{width:70%;}
 	blockquote p{width:60%;}
 	.features-slider {padding: 11% 50px 10% 50px;}
 }
