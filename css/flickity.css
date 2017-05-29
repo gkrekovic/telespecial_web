@@ -14,6 +14,7 @@
   cursor: grab;
 }
 
+
 .flickity-viewport.is-pointer-down {
   cursor: -webkit-grabbing;
   cursor: grabbing;
