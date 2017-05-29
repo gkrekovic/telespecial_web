@@ -97,3 +97,23 @@ $('a[href*=#]:not([href=#])').click(function() {
 		}
 	}
 });
+
+$( window ).load(function() {
+	var myform = $("#myform");
+	myform.submit(function(event){
+		event.preventDefault();
+	
+	  var service_id = "telespecial_hr";
+	  var template_id = "telespecial";
+	  myform.find("button").text("Sending...");
+	  emailjs.send(service_id,template_id,{name: $("#name").val(), email: $("#email").val(), message: $("#message").val()})
+		.then(function(){ 
+		   alert("Your message has been sent successfully! Thank you for contacting us.");
+		   myform.find("button").text("Send");
+		 }, function(err) {
+		   alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+		   myform.find("button").text("Send");
+		});
+		return false;
+	});
+});
